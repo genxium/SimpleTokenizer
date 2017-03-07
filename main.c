@@ -1,5 +1,8 @@
+typedef int bool;
+#define true 1
+#define false 0
+
 #include <string.h>
-#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -63,7 +66,7 @@ bool delete_token(token* ref) {
 
 typedef struct token_list_node {
 	token* t;
-	token_list_node* next;
+	struct token_list_node* next;
 } token_list_node;
 
 token_list_node* create_token_list_node(token* a_token) {

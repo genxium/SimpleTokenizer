@@ -1,6 +1,9 @@
 # Vim 
 *.swp
 
+# Preprocessed files
+*.i
+
 # Compiled Object files
 *.slo
 *.lo
@@ -29,3 +32,6 @@
 *.exe
 *.out
 *.app
+
+# Ctags
+tags
